@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascrpt Intermediate Exercise 3</title>
+</head>
+
+<body>
+    <script>
+        let fruits = "mango/cherries/kiwi/grapes/pear/peach/orange/lemon";
+        let fruitsSeparated = fruits.split("/");
+        console.log("fruitsSeparated: ", fruitsSeparated);
+        /*         document.write("fruitsSeparated: <br><br>"); */
+        for (i = 0; i < fruitsSeparated.length; i++) {
+            document.write(fruitsSeparated[i] + "<br><br>");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript advanced exercise 2</title>
+</head>
+
+<body>
+    <script>
+        let people = ["Greg", "Mary", "Devon", "James"];
+        let plus = 0;
+        console.log("people: ", people);
+        people.splice(0, 1);
+        console.log("people: ", people);
+        people.splice(0, 0, "Matt");
+        console.log("people: ", people);
+        people.splice(3, 1);
+        console.log("people: ", people);
+        people.splice(people.length, 0, "Chris")
+        console.log("people: ", people);
+        let newPeople = people.slice(2)
+        console.log("newPeople: ", newPeople);
+        if (people.indexOf("Mary") > -1) { plus = 1; } else { plus = 0; }
+        console.log("Mary is at position:", people.indexOf("Mary") + plus);
+        if (people.indexOf("Foo") > -1) { plus = 1; } else { plus = 0; }
+        console.log("Foo is at position:", people.indexOf("Foo") + plus);
+        people = ["Greg", "Mary", "Devon", "James"];
+        people.splice(2, 1, "Elizabeth", "Anna");
+        console.log("people: ", people);
+    </script>
+</body>
+
+</html>

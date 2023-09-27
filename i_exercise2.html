@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascrpt Intermediate Exercise 2</title>
+</head>
+<body>
+    <script>
+        let fruits = ["apple", "banana", "kiwi"];
+        fruits.push = ("orange");
+        console.log("fruits: ", fruits);
+        console.log("fruit4: ", fruits[4]);
+        fruits.splice(fruits.length,1,"orange1");
+        console.log("fruits: ", fruits);
+        console.log("fruit4: ", fruits[3]);
+// ---- second array ---------------------------------------------------------------------
+        let pets = ["monkey", "horse", "dog"];
+        pets = pets.sort();
+        console.log("pets: ", pets);
+        pets.splice(0,0,"cat");
+        console.log("pets: ", pets);
+    </script>
+</body>
+</html>
